@@ -21,22 +21,25 @@ const Navbar = () => {
     <div className="navbar">
         <div className="nav-logo">
             {/* <img src={logo} alt=""/> */}
-            <p>GRIND CYCLE</p>
+            <p onClick={()=>{setMenu("shop")}}> <Link style={{ textDecoration:"none", color:"#272727"}} to="/">GRIND CYCLE</Link></p>
         </div>
-        <img className="nav-dropdown" onClick={dropdown_toggle} src={nav_dropdown} alt="" />
+        <img  className="nav-dropdown" onClick={dropdown_toggle} src={nav_dropdown} alt="" />
         <ul ref={menuRef} className="nav-menu">
-            <li onClick={()=>{setMenu("shop")}}><Link style={{ textDecoration:"none", color:"#272727"}} to="/">HOME</Link>{menu==="shop"?<hr/>:<></>}</li>
-            <li onClick={()=>{setMenu("skate")}}><Link style={{ textDecoration:"none", color:"#272727"}} to="/skate">SKATE</Link>{menu==="skate"?<hr/>:<></>}</li>
-            <li onClick={()=>{setMenu("cruiser")}}><Link style={{ textDecoration:"none", color:"#272727"}} to="/cruiser">CRUISER</Link>{menu==="cruiser"?<hr/>:<></>}</li>
-            <li onClick={()=>{setMenu("shoes")}}><Link style={{ textDecoration:"none", color:"#272727"}} to="/shoes">SHOES</Link>{menu==="shoes"?<hr/>:<></>}</li>
-            <li onClick={()=>{setMenu("cart")}}><Link  style={{ textDecoration:"none", color:"#272727"}} to="/cart">PANIER ({getTotalCartItems()})</Link></li>
+            <li onClick={()=>{setMenu("shop")}}><Link style={{ textDecoration:"none", color:"#272727",fontFamily:"Unbounded"}} to="/">ACCUEIL</Link>{menu==="shop"?<hr/>:<></>}</li>
+            <li onClick={()=>{setMenu("skate")}}><Link style={{ textDecoration:"none", color:"#272727",fontFamily:"Unbounded"}} to="/skate">SKATE</Link>{menu==="skate"?<hr/>:<></>}</li>
+            <li onClick={()=>{setMenu("cruiser")}}><Link style={{ textDecoration:"none", color:"#272727",fontFamily:"Unbounded"}} to="/cruiser">CRUISER</Link>{menu==="cruiser"?<hr/>:<></>}</li>
+            <li onClick={()=>{setMenu("shoes")}}><Link style={{ textDecoration:"none", color:"#272727",fontFamily:"Unbounded"}} to="/shoes">SHOES</Link>{menu==="shoes"?<hr/>:<></>}</li>
+            <li onClick={()=>{setMenu("cart")}}><Link  style={{ textDecoration:"none", color:"#272727",fontFamily:"Unbounded"}} to="/cart">PANIER ({getTotalCartItems()})</Link>{menu==="cart"?<hr/>:<></>}</li>
             <div className="nav-login-cart">
-           <Link to="/login"><button>MON COMPTE</button></Link> 
-          
-        </div>
-        </ul>
+            {localStorage.getItem('auth-token') ? (
+  <button onClick={() => {localStorage.removeItem("auth-token"); window.location.replace("/");}}>SE DÉCONNECTER</button>
+) : (
+  <Link to="/login"><button>MON COMPTE</button></Link>
+)}
+           </div>
+           </ul>
         
-    </div>
+      </div>
   )
 }
 

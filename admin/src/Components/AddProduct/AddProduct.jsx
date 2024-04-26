@@ -8,7 +8,7 @@ const AddProduct = () => {
     const [productDetails, setProductDetails] = useState({
       name:"",
       image:"",
-      category:"women",
+      category:"cruiser",
       new_price:"",
       old_price:"",
     })
@@ -22,7 +22,10 @@ const AddProduct = () => {
     }
 
     const Add_Product = async () => {
-      // console.log(productDetails);
+      if (!productDetails.category) {
+        alert("Veuillez sélectionner une catégorie pour le produit.");
+        return;
+      }
       let responseData;
       let product = productDetails;
 
@@ -71,7 +74,7 @@ const AddProduct = () => {
         <p>Catégorie Produit</p>
         <select value={productDetails.category} onChange={changeHandler} name="category" className="addproduct-selector" placeholder="Nouveau prix">
           <option value="cruiser">Cruiser</option>
-          <option value="men">Skate</option>
+          <option value="skate">Skate</option>
           <option value="shoes">Shoes</option>
         </select>
       </div>
