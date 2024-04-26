@@ -2,8 +2,10 @@
     display: flex;
     justify-content: space-around;
     padding: 16px;
-    border-bottom: 2px solid #111111;
     align-items: center;
+    background: #F5F5DC;
+    color:#272727;
+    border-bottom: #272727 3px solid;
 }
 
 .nav-logo{
@@ -13,9 +15,9 @@
 }
 
 .nav-logo p{
-    color: #111111;
-    font-size: 46px;
-    font-weight: 700;
+    color: #272727;
+    font-size: 30px;
+    font-weight: 500;
     font-family:"Unbounded";
 }
 
@@ -24,9 +26,9 @@
     align-items: center;
     list-style: none;
     gap: 50px;
-    color: #111111;
+    color: #272727;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .nav-menu li{
@@ -36,13 +38,14 @@
     justify-content: center;
     gap: 3px;
     cursor: pointer;
+    color: #272727;
 }
 
 .nav-menu hr{
     border: none;
     width: 80%;
     height: 3px;
-    background: #111111;
+    background: #272727;
 }
 
 .nav-login-cart{
@@ -53,19 +56,20 @@
 
 .nav-login-cart button{
     padding: 10px 30px;
-    background-color: #f5f5f5;
-    border: 2px #111111 solid;
+    background-color: #272727;
+    border: none;
+    border-radius: 40px;;
     font-family: "DM Sans", sans-serif;
-    color: #111111;
+    color: #F5F5DC;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 500;
     cursor: pointer;
 }
 
 .nav-login-cart p{
     padding: 10px 30px;
     font-family: "DM Sans", sans-serif;
-    color: #111111;
+    color: #272727;
     font-size: 20px;
     font-weight: 700;
     cursor: pointer;
@@ -73,8 +77,8 @@
 }
 
 .nav-login-cart button:active{
-    color: #f5f5f5;
-    background-color: #111111;
+    color: #272727;
+    background-color: #F5F5DC;
 }
 
 .nav-dropdown{
@@ -122,7 +126,7 @@
     }
     .nav-menu{
         gap: 25px;
-        font-size: 14px;
+        font-size: 10px;
     }
     .nav-login-cart button{
         width: 80px;
@@ -152,11 +156,12 @@
     }
     .nav-dropdown{
         display: block;
-        width: 30px;
+        width: 20px;
         height: auto;
         rotate: -90deg;
         transition: 0.5s;
         z-index: 2;
+        right: 0px;
     }
 
     .nav-login-cart button {
@@ -168,15 +173,16 @@
         height: 88px;
         width: 100%;
         position: absolute;
-        background: #f5f5f5;
+        background: #F5F5DC;
         justify-content: center;
-        top: 100px;
-        border-bottom: 2px solid #111111;
+        top: 60px;
+        border-bottom: #272727 3px solid;
     }
     .nav-menu-visible{
         display: flex;
 
     }
+    
 
     .nav-dropdown.open{
         transform: rotate(90deg);
@@ -191,7 +197,7 @@
 
     .nav-menu{
         height: 70px;
-        top: 100px;
+        top: 80px;
     }
 
     .nav-login-cart{

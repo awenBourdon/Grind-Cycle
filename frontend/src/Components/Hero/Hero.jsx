@@ -1,24 +1,22 @@
 import React from 'react'
 import "./Hero.css"
-import hand_icon from "../Assets/hand_icon.png"
-import arrow_icon from "../Assets/arrow.png"
 import hero_image from "../Assets/hero_image.png"
 
 const Hero = () => {
   return (
     <div className="hero">
         <div className="hero-left">
-            <h2>NOUVEAUTÉS</h2>
+            <h2>GRIND CYCLE</h2>
             <div>
                 <div className="hand-hand-icon">
-                    <p>NOUVEAU</p>
+                    <p>ROULONS</p>
                     
                 </div>
-                <p>COLLECTIONS</p>
-                <p>FOR EVERYONE</p>
+                <p>VERS UN</p>
+                <p>AVENIR DURABLE</p>
             </div>
             <div className="hero-latest-btn">
-                <div>NOUVEAUTÉS</div>
+                <div>DÉCOUVRIR</div>
                 
             </div>
         </div>

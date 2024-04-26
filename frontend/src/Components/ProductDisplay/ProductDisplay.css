@@ -30,16 +30,15 @@
 }
 
 .productdisplay-right h1{
-    color: #111111;
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 500;
+    font-family:"Unbounded";
 }
 
 .productdisplay-right-stars{
     display: flex;
     align-items: center;
     margin-top: 13px;
-    color: #111111;
     font-size: 16px;
 }
 
@@ -52,18 +51,15 @@
 }
 
 .productdisplay-right-price-old{
-    color: #111111;
     text-decoration: line-through;
     text-decoration-thickness: 2px;
 }
 
 .productdisplay-right-price-new{
-    color: #111111;
 }
 
 .productdisplay-right-size h1{
         margin-top: 30px;
-        color: #111111;
         font-size: 20px;
         font-weight: 600;
 }
@@ -72,13 +68,15 @@
     display: flex;
     margin: 30px 0px;
     gap: 20px;
+    
 }
 
 .productdisplay-right-sizes div{
     padding : 18px 24px;
-    border: 1px solid #111111;
-    color: #111111;
+    border: 1px solid #272727;
+    color: #272727;
     cursor: pointer;
+    background-color: #f5f5dc;
 }
 
 .productdisplay-right button{
@@ -86,10 +84,11 @@
     width: 300px;
     font-size: 20px;
     font-weight: 700;
-    color: #111111;
-    background: #39ff14;
+    color: #f5f5dc;
+    background: #272727;
     margin-bottom: 40px;
-    border: 1px solid #111111;
+    border: none;
+    border-radius: 40px;
     outline: none;
     cursor: pointer;
     font-family: "DM Sans", sans-serif; 

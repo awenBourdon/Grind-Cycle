@@ -33,8 +33,8 @@ const ProductDisplay = (props) => {
                 <p>(122)</p>
             </div>
             <div className="productdisplay-right-prices">
-                <div className="productdisplay-right-price-old">${product.old_price}</div>
-                <div className="productdisplay-right-price-new">${product.new_price}</div>
+                <div className="productdisplay-right-price-old">{product.old_price}€</div>
+                <div className="productdisplay-right-price-new">{product.new_price}€</div>
             </div>
             <div className="productdisplay-right-description">
             UNE PLANCHE POLYVALENTE ET IDÉALE POUR SE DÉPLACER EN VILLE OU POUR DES BALADES DÉCONTRACTÉES. PARFAITEMENT ADAPTÉE POUR LES DÉBUTANTS.

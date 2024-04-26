@@ -25,16 +25,17 @@ const Navbar = () => {
         </div>
         <img className="nav-dropdown" onClick={dropdown_toggle} src={nav_dropdown} alt="" />
         <ul ref={menuRef} className="nav-menu">
-            <li onClick={()=>{setMenu("shop")}}><Link style={{ textDecoration:"none", color:"#111111"}} to="/">SHOP</Link>{menu==="shop"?<hr/>:<></>}</li>
-            <li onClick={()=>{setMenu("mens")}}><Link style={{ textDecoration:"none", color:"#111111"}} to="/mens">MEN</Link>{menu==="mens"?<hr/>:<></>}</li>
-            <li onClick={()=>{setMenu("womens")}}><Link style={{ textDecoration:"none", color:"#111111"}} to="/womens">WOMEN</Link>{menu==="womens"?<hr/>:<></>}</li>
-            <li onClick={()=>{setMenu("kids")}}><Link style={{ textDecoration:"none", color:"#111111"}} to="/kids">KIDS</Link>{menu==="kids"?<hr/>:<></>}</li>
-            <li onClick={()=>{setMenu("cart")}}><Link  style={{ textDecoration:"none", color:"#111111", border:"2px solid #111111", padding:'10px'}} to="/cart">PANIER ({getTotalCartItems()})</Link></li>
-        </ul>
-        <div className="nav-login-cart">
+            <li onClick={()=>{setMenu("shop")}}><Link style={{ textDecoration:"none", color:"#272727"}} to="/">HOME</Link>{menu==="shop"?<hr/>:<></>}</li>
+            <li onClick={()=>{setMenu("skate")}}><Link style={{ textDecoration:"none", color:"#272727"}} to="/skate">SKATE</Link>{menu==="skate"?<hr/>:<></>}</li>
+            <li onClick={()=>{setMenu("cruiser")}}><Link style={{ textDecoration:"none", color:"#272727"}} to="/cruiser">CRUISER</Link>{menu==="cruiser"?<hr/>:<></>}</li>
+            <li onClick={()=>{setMenu("shoes")}}><Link style={{ textDecoration:"none", color:"#272727"}} to="/shoes">SHOES</Link>{menu==="shoes"?<hr/>:<></>}</li>
+            <li onClick={()=>{setMenu("cart")}}><Link  style={{ textDecoration:"none", color:"#272727"}} to="/cart">PANIER ({getTotalCartItems()})</Link></li>
+            <div className="nav-login-cart">
            <Link to="/login"><button>MON COMPTE</button></Link> 
           
         </div>
+        </ul>
+        
     </div>
   )
 }

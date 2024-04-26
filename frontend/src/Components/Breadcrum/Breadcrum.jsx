@@ -6,10 +6,10 @@ const Breadcrum = (props) => {
     const {product} = props;
   return (
     <div className="breadcrum">
-        ACCUEIL <img src={arrow_icon} alt="" /> 
-        SHOP<img src="arrow_icon" alt="" /> 
-        {product.category} <img src={arrow_icon} alt="" /> 
-        {product.name}
+        HOME <img src={arrow_icon} alt="" /> 
+        <img src="arrow_icon" alt="" /> 
+        {product.category.toUpperCase()} <img src={arrow_icon} alt="" /> 
+            {product.name.toUpperCase()}
     </div>
   )
 }
