@@ -55,8 +55,7 @@
     text-decoration-thickness: 2px;
 }
 
-.productdisplay-right-price-new{
-}
+
 
 .productdisplay-right-size h1{
         margin-top: 30px;
@@ -95,6 +94,11 @@
     text-align: center;
     white-space: nowrap;
     border-radius: 8px;
+}
+
+.productdisplay-right button:active{
+    background-color: #f5f5f5;
+    color: #272727;
 }
 
 .productdisplay-right-category{

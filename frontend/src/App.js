@@ -6,7 +6,7 @@ import ShopCategory from './Pages/ShopCategory';
 import Product from './Pages/Product';
 import LoginSignUp from './Pages/LoginSignUp';
 import Cart from './Pages/Cart';
-import Annoucement from './Components/Navbar/Annoucement';
+import Annoucement from './Components/Annoucement/Annoucement';
 import Footer from './Components/Footer/Footer';
 
 

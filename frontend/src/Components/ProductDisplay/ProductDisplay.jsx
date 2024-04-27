@@ -50,8 +50,8 @@ const ProductDisplay = (props) => {
                 </div>
             </div>
             <button onClick={()=>{addToCart(product.id)}}>AJOUTER AU PANIER</button>
-            <p className="productdisplay-right-category" ><span>Catégorie :</span> CRUISER, SKATE, SHOES</p>
-            <p className="productdisplay-right-category" ><span>Tags :</span> CRUISER, SKATE, SHOES</p>
+            <p className="productdisplay-right-category" ><span>Catégorie :</span> Cruiser, Skate, Shoes</p>
+            <p className="productdisplay-right-category" ><span>Tags :</span> Cruiser, Skate, Shoes</p>
         </div>
 
     </div>

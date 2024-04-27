@@ -40,6 +40,12 @@
     font-weight: 700;
     font-family: "DM Sans";
     border-radius: 8px;
+    cursor: pointer
+}
+
+.hero-latest-btn:active{
+    background-color: #272727;
+    color: #F5F5f5;
 }
 
 .hero-right{

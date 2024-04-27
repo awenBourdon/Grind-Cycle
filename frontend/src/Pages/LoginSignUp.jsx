@@ -3,7 +3,7 @@ import "./CSS/LoginSignUp.css"
 
 const LoginSignUp = () => {
 
-const [state,setState] = useState("SE CONNECTER");
+const [state,setState] = useState("Se connecter");
 const [formData, setFormData] = useState({
   username:"",
   password:"",
@@ -65,22 +65,22 @@ const signup = async() => {
       <div className="loginsignup-container">
         <h1>{state}</h1>
         <div className="loginsignup-fields">
-          {state === "S'INSCRIRE"?<input name="username" value={formData.username} onChange={changeHandler} type="text" placeholder="IDENTIFIANT"/>:<></>}
-          <input name="email" value={formData.email} onChange={changeHandler} type="email" placeholder="ADRESSE EMAIL"/>
-          <input name="password" value={formData.password} onChange={changeHandler} type="password" placeholder="MOT DE PASSE"/>
+          {state === "S'inscrire"?<input name="username" value={formData.username} onChange={changeHandler} type="text" placeholder="Pseudonyme"/>:<></>}
+          <input name="email" value={formData.email} onChange={changeHandler} type="email" placeholder="Adresse email"/>
+          <input name="password" value={formData.password} onChange={changeHandler} type="password" placeholder="Mot de passe"/>
         </div>
         
 
         {state==="S'INSCRIRE"
-        ?<p className="loginsignup-login">TU AS DÉJÀ UN COMPTE ?<span onClick={()=>{setState("SE CONNECTER")}}> SE CONNECTER</span></p>
-        :<p className="loginsignup-login">CRÉER UN COMPTE<span onClick={()=>{setState("S'INSCRIRE")}}> EN CLIQUANT ICI</span></p>}
+        ?<p className="loginsignup-login">Tu as déjà un compte ?<span onClick={()=>{setState("SE CONNECTER")}}> Se connecter</span></p>
+        :<p className="loginsignup-login">Créer un compte<span onClick={()=>{setState("S'INSCRIRE")}}> en cliquant ici</span></p>}
         
         {state === "S'INSCRIRE" &&
         <div className="loginsignup-agree">
         <input type="checkbox" name="" id="" />
-         <p>JE CONFIRME AVOIR LU, COMPRIS ET ACCEPTÉ <b>LES CONDITIONS D'UTILISATIONS ET LA POLITIQUE DE CONFIDENTIALITÉS.</b></p>
+         <p>Je confirme avoir lu, compris et accepté les <b>conditions d'utilisation et la politique de confidentialité.</b></p>
          </div>}
-        <button onClick={()=>{state==="SE CONNECTER"?login():signup()}}>CONTINUER</button>
+        <button onClick={()=>{state==="SE CONNECTER"?login():signup()}}>Continuer</button>
       </div>
     </div>
   )

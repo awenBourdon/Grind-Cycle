@@ -1,0 +1,12 @@
+.annoucement{
+    height: 30px;
+    background-color: #ff0000;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+}
+@media (max-width:375px){
+.annoucement{font-size: 10px}}

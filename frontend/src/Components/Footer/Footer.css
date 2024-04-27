@@ -1,96 +1,78 @@
-/* .footer{
+/* footer.css */
+
+.container {
+    display: flex;
+    background-color: #272727;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.left,
+.center,
+.right {
+    padding: 40px;
+}
+
+.left {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    padding-top: 50px;
-    background-color: #272727;
 }
 
-.footer-logo{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.footer-logo p{
-    color: #F5F5DC;
-    font-size: 46px;
+.logo {
+    font-family: "Unbounded";
     font-weight: 500;
-    font-family:"Unbounded";
 }
 
-.footer-links{
-    display: flex;
+.desc {
+    margin: 20px 0px;
+}
+
+
+.center {
+    flex: 1;
+}
+
+.center ul li:hover {
+    text-decoration: underline;
+}
+
+.title {
+    margin-bottom: 30px;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
     list-style: none;
-    gap: 50px;
-    color: #F5F5DC;
-    font-style: 20px;
-    border-radius: 40px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.footer-links li{
+.list-item {
+    width: 50%;
+    margin-bottom: 10px;
     cursor: pointer;
+    font-weight: 200;
 }
 
-.footer-social-icon{
-    display: flex;
-    gap: 20px;
+.right {
+    flex: 1;
 }
 
-.footer-icons-container{
-    padding: 10px;
-    padding-bottom: 6px;
-    border: 1px solide #F5F5DC;
-}
-
-.footer-copyright{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    width: 100%;
-    margin-bottom:30px;
-    font-size: 20px;
-    color:#F5F5DC;
-}
-
-.footer-copyright hr{
-    width: 80%;
-    border: none;
-    height: 3px;
-    background-color: #272727;
-    border-top: #F5F5DC 2px solid;
-}
-
-@media(max-width:800px){
-    .footer{
-        gap: 20px;
+/* Media Queries */
+@media (max-width: 768px) {
+    .left,
+    .right {
+        flex: 1 100%;
+        text-align: center;
     }
 
-    .footer-logo p{
-        font-size:25px 
+    .center{
+        display:none
     }
 
-    .footer-links{
-        font-size: 14px;
-        gap: 10px;
-    }
-
-    .footer-social-icon img{
-        width: 22px;
-    }
-
-    .footer-copyright{
-        font-size:13px;
+    .list-item {
+        width: 100%;
     }
 }
-
-@media(max-width:400px){
-    .footer-links{
-        display: flex;
-        flex-direction: column;
-    }
-}
- */
