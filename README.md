@@ -4,4 +4,4 @@ Pour lancer le site :
 - npm start dans frontend
 - node index.js dans backend
 
-[Preview](preview.png)
+![Preview](preview.png)
