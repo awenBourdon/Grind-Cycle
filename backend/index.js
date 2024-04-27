@@ -10,8 +10,10 @@ const cors = require("cors");
 app.use(express.json());
 app.use(cors());
 
+require('dotenv').config();
+
 // Database Connect With MongoDB
-mongoose.connect("mongodb+srv://awenbourdon:IEcWc7MtLHZ1rwxe@cluster0.isz1wz5.mongodb.net/GrindCycle");
+mongoose.connect(process.env.DB_URL, { useNewUrlParser: true, useUnifiedTopology: true });
 
 // API Creation
 app.get("/",(req, res) => {
