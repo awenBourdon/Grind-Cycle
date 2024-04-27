@@ -73,10 +73,11 @@
 
 .productdisplay-right-sizes div{
     padding : 18px 24px;
-    border: 1px solid #272727;
-    color: #272727;
+    border: none;
+    color: white;
     cursor: pointer;
-    background-color: #f5f5dc;
+    background-color: #272727;
+    border-radius: 40px;
 }
 
 .productdisplay-right button{
@@ -84,16 +85,16 @@
     width: 300px;
     font-size: 20px;
     font-weight: 700;
-    color: #f5f5dc;
-    background: #272727;
+    color: white;
+    background: #ff0000;
     margin-bottom: 40px;
     border: none;
-    border-radius: 40px;
     outline: none;
     cursor: pointer;
     font-family: "DM Sans", sans-serif; 
     text-align: center;
     white-space: nowrap;
+    border-radius: 8px;
 }
 
 .productdisplay-right-category{

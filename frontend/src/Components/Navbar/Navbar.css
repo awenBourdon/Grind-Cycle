@@ -3,9 +3,9 @@
     justify-content: space-around;
     padding: 16px;
     align-items: center;
-    background: #F5F5DC;
+    background: white;
     color:#272727;
-    border-bottom: #272727 3px solid;
+    box-shadow: 0 1px 3px -2px #111111;
 }
 
 .nav-logo{
@@ -28,7 +28,7 @@
     gap: 50px;
     color: #272727;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .nav-menu li{
@@ -58,9 +58,9 @@
     padding: 10px 30px;
     background-color: #272727;
     border: none;
-    border-radius: 40px;;
+    border-radius: 8px;;
     font-family: "DM Sans", sans-serif;
-    color: #F5F5DC;
+    color: white;
     font-size: 20px;
     font-weight: 500;
     cursor: pointer;
@@ -78,7 +78,7 @@
 
 .nav-login-cart button:active{
     color: #272727;
-    background-color: #F5F5DC;
+    background-color: #F5F5f5;
 }
 
 .nav-dropdown{
@@ -136,6 +136,7 @@
     }
     .nav-login-cart img{
         width: 30px;
+        height: auto;
     }
     .nav-cart-count{
         width: 18px;
@@ -173,10 +174,10 @@
         height: 88px;
         width: 100%;
         position: absolute;
-        background: #F5F5DC;
+        background: white;
         justify-content: center;
-        top: 60px;
-        border-bottom: #272727 3px solid;
+        top: 80px;
+        box-shadow: 0 1px 3px -2px #111111;
     }
     .nav-menu-visible{
         display: flex;

@@ -9,11 +9,11 @@ const Hero = () => {
             <h2>GRIND CYCLE</h2>
             <div>
                 <div className="hand-hand-icon">
-                    <p>ROULONS</p>
+                    <p>La référence</p>
                     
                 </div>
-                <p>VERS UN</p>
-                <p>AVENIR DURABLE</p>
+                <p>du skate</p>
+                <p>en ligne</p>
             </div>
             <div className="hero-latest-btn">
                 <div>DÉCOUVRIR</div>

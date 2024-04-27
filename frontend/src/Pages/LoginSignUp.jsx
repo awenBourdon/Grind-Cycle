@@ -14,33 +14,37 @@ const changeHandler = (e) => {
   setFormData({...formData,[e.target.name]:e.target.value})
 }
 
-const login = async() => {
+const login = async () => {
   console.log("Login Function Executed", formData);
-  let responseData;
-  await fetch("http://localhost:4000/login", {
-    method:"POST",
-    hearders:{
-    Accept:"application/form-data",
-    "Content-Type":"application/json",
-  },
-  body: JSON.stringify(formData),
-  }).then((response)=> response.json())
-  .then((data)=>responseData=data)
-
-  if(responseData.success) {
-    localStorage.setItem("auth-token", responseData.token);
-    window.location.replace("/");
-  } else {
-    alert(responseData.errors)
+  try {
+    const response = await fetch("http://localhost:4000/login", {
+      method: "POST",
+      headers: {
+        Accept: "application/json", // Correction de la valeur de l'en-tête
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+    const responseData = await response.json();
+    
+    if (responseData.success) {
+      localStorage.setItem("auth-token", responseData.token);
+      window.location.replace("/");
+    } else {
+      alert(responseData.errors);
+    }
+  } catch (error) {
+    console.error("Error during login:", error);
+    alert("An error occurred during login. Please try again later.");
   }
-}
+};
 
 const signup = async() => {
   console.log("Signup Function Executed",formData);
   let responseData;
   await fetch("http://localhost:4000/signup", {
     method:"POST",
-    hearders:{
+    headers:{
     Accept:"application/form-data",
     "Content-Type":"application/json",
   },

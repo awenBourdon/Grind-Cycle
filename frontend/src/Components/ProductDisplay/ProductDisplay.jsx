@@ -37,23 +37,21 @@ const ProductDisplay = (props) => {
                 <div className="productdisplay-right-price-new">{product.new_price}€</div>
             </div>
             <div className="productdisplay-right-description">
-            UNE PLANCHE POLYVALENTE ET IDÉALE POUR SE DÉPLACER EN VILLE OU POUR DES BALADES DÉCONTRACTÉES. PARFAITEMENT ADAPTÉE POUR LES DÉBUTANTS.
+            Découvrez une sélection pointue de planches, d'accessoires et de vêtements, tout en vous imprégnant de l'atmosphère décontractée et passionnée qui règne dans notre magasin. Rejoignez une communauté de skateurs passionnés et vivez pleinement votre passion pour le skateboard avec nous !
             </div>
             <div className="productdisplay-right-size">
                 <h1>TAILLE</h1>
                 <div className="productdisplay-right-sizes">
-                    <div>8.5</div>
-                    <div>8.75</div>
-                    <div>9</div>
-                    <div>9.25</div>
-                    <div>9.5</div>
-                    <div>9.75</div>
-                    <div>10</div>
+                    <div>XS</div>
+                    <div>M</div>
+                    <div>L</div>
+                    <div>XL</div>
+                    
                 </div>
             </div>
             <button onClick={()=>{addToCart(product.id)}}>AJOUTER AU PANIER</button>
-            <p className="productdisplay-right-category" ><span>CATÉGORIE :</span> CRUISER</p>
-            <p className="productdisplay-right-category" ><span>TAGS :</span> CRUISER</p>
+            <p className="productdisplay-right-category" ><span>Catégorie :</span> CRUISER, SKATE, SHOES</p>
+            <p className="productdisplay-right-category" ><span>Tags :</span> CRUISER, SKATE, SHOES</p>
         </div>
 
     </div>

@@ -8,8 +8,8 @@ const Breadcrum = (props) => {
     <div className="breadcrum">
         HOME <img src={arrow_icon} alt="" /> 
         <img src="arrow_icon" alt="" /> 
-        {product.category.toUpperCase()} <img src={arrow_icon} alt="" /> 
-            {product.name.toUpperCase()}
+        {product.category} <img src={arrow_icon} alt="" /> 
+            {product.name}
     </div>
   )
 }

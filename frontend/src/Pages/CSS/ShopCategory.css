@@ -15,8 +15,6 @@
     padding: 10px 20px;
     border: 2px solid #272727;
     color: #272727;
-    background-color: #F5F5DC;
-    border-radius: 40px;
 }
 
 .shopcategory-indexSort p span{
@@ -27,6 +25,7 @@
     margin: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0px;
     row-gap: 80px;
     width: 100%;
 }
@@ -40,10 +39,10 @@
     height: 69px;
     border: none;
     background: #272727;
-    color: #F5F5DC;
+    color: white;
     font-size: 18px;
     font-weight: 500;
-    border-radius: 40px;
+    border-radius: 8px;
 }
 
 @media(max-width:1280px){
