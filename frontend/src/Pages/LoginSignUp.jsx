@@ -71,11 +71,11 @@ const signup = async() => {
         </div>
         
 
-        {state==="S'INSCRIRE"
-        ?<p className="loginsignup-login">Tu as déjà un compte ?<span onClick={()=>{setState("SE CONNECTER")}}> Se connecter</span></p>
-        :<p className="loginsignup-login">Créer un compte<span onClick={()=>{setState("S'INSCRIRE")}}> en cliquant ici</span></p>}
+        {state==="S'inscrire"
+        ?<p className="loginsignup-login">Tu as déjà un compte ?<span onClick={()=>{setState("Se connecter")}}> Se connecter</span></p>
+        :<p className="loginsignup-login">Créer un compte<span onClick={()=>{setState("S'inscrire")}}> en cliquant ici</span></p>}
         
-        {state === "S'INSCRIRE" &&
+        {state === "S'inscrire" &&
         <div className="loginsignup-agree">
         <input type="checkbox" name="" id="" />
          <p>Je confirme avoir lu, compris et accepté les <b>conditions d'utilisation et la politique de confidentialité.</b></p>
