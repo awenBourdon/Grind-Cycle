@@ -19,7 +19,7 @@ const Footer = () => {
                     <li className="list-item">Skate</li>
                     <li className="list-item">Shoes</li>
                     <li className="list-item">Mon compte</li>
-                    <li className="list-item">Suivre ma commande</li>
+                    <li className="list-item">Mes commandes</li>
                     <li className="list-item">Ma wishlist</li>
                     <li className="list-item">Conditions générales</li>
                 </ul>

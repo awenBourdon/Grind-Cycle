@@ -1,7 +1,7 @@
 import React, {useContext} from 'react'
 import "./ProductDisplay.css"
-import star_icon from "../Assets/star_icon.png"
-import star_dull_icon from "../Assets/star_dull_icon.png"
+import star_icon from "../Assets/star_icon.svg"
+import star_dull_icon from "../Assets/star_dull_icon.svg"
 import { ShopContext } from '../../Context/ShopContext'
 
 
@@ -40,7 +40,7 @@ const ProductDisplay = (props) => {
             Découvrez une sélection pointue de planches, d'accessoires et de vêtements, tout en vous imprégnant de l'atmosphère décontractée et passionnée qui règne dans notre magasin. Rejoignez une communauté de skateurs passionnés et vivez pleinement votre passion pour le skateboard avec nous !
             </div>
             <div className="productdisplay-right-size">
-                <h1>TAILLE</h1>
+                <h1>Taille</h1>
                 <div className="productdisplay-right-sizes">
                     <div>XS</div>
                     <div>M</div>
@@ -49,7 +49,7 @@ const ProductDisplay = (props) => {
                     
                 </div>
             </div>
-            <button onClick={()=>{addToCart(product.id)}}>AJOUTER AU PANIER</button>
+            <button onClick={()=>{addToCart(product.id)}}>Ajouter au panier</button>
             <p className="productdisplay-right-category" ><span>Catégorie :</span> Cruiser, Skate, Shoes</p>
             <p className="productdisplay-right-category" ><span>Tags :</span> Cruiser, Skate, Shoes</p>
         </div>

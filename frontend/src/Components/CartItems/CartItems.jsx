@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import "./CartItems.css"
 import { ShopContext } from '../../Context/ShopContext'
-import remove_icon from "../Assets/cart_cross_icon.png"
+import remove_icon from "../Assets/cart_cross_icon.svg"
 
 const CartItems = () => {
     const {getTotalCartAmount ,all_product, cartItems, removeFromCart} = useContext(ShopContext);
@@ -52,13 +52,13 @@ const CartItems = () => {
                         <h3>{getTotalCartAmount()}€</h3>
                     </div>
                 </div>
-                <button>FINALISER LA COMMANDE</button>
+                <button>Finaliser la commande</button>
             </div>
             <div className="cartitems-promocode">
                 <p>Code de Réduction</p>
                 <div className="cartitems-promobox">
-                    <input type="text" placeholder="Code promo" />
-                    <button>VALIDER</button>
+                    <input type="text" />
+                    <button>Valider</button>
                 </div>
             </div>
         </div>

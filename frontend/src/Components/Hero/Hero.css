@@ -1,7 +1,14 @@
 .hero{
-    height: 90vh;
+    height: 500px;
     display: flex;
-    padding-top: 50px
+    padding-top: 100px;
+    /*background-image: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+    ),
+    url("../Assets/register_login_bg.webp");
+    background-position: center;
+    background-size: cover;  */
 }
 
 .hero-left{
@@ -9,20 +16,17 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-content: center;
     gap: 20px;
-    padding-left: 180px;
     line-height: 1.1;
 }
 
-.hero-left h2{
-    font-size: 26px;
-    font-weight: 700;
-}
-
 .hero-left p{
-    font-size : 100px;
-    font-weight: 500;
-    font-family:"Unbounded";
+    font-size : 90px;
+    font-weight: 700;
+    color: #FF3C00;
+    text-align: center;
+    letter-spacing: -1px;
 }
 
 
@@ -33,128 +37,38 @@
     gap: 15px;
     width: 310px;
     height: 70px;
+    margin: auto;
     margin-top: 30px;
-    background: #ff0000;
-    color: white;
+    background: transparent;
+    color: #FF3C00;
+    border: #FF3C00 1px solid;
     font-size: 22px;
-    font-weight: 700;
+    font-weight: 500;
     font-family: "DM Sans";
-    border-radius: 8px;
+    border-radius: 40px;
     cursor: pointer
 }
 
 .hero-latest-btn:active{
-    background-color: #272727;
-    color: #F5F5f5;
+    background-color: #FF3C00;
+    color: #f3efe7;
 }
 
-.hero-right{
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.hero-right img{
-    height: 600px;
-    border-radius: 8px;
-}
 
-@media(max-width:1280px){
-    .hero-left{
-        padding-left: 100px;
-    }
-
-    .hero-left h2{
-        font-size: 22px;
-    }
-
+@media(max-width:800px){
     .hero-left p{
         font-size: 60px;
     }
 
-    .hero-latest-btn{
-        gap: 18px;
-        width: 250px;
-        height: 60px;
-        margin-top : 20px;
-        font-size: 18px;
-    }
-
-    .hero-right img{
-        width: 500px;
-    }
-}
-
-@media(max-width:1024px){
     .hero{
-        height: 650px;
-    }
-
-    .hero-left{
-        padding-left: 80px;
-    }
-
-    .hero-left h2{
-        font-size: 20px;
-    }
-
-    .hero-left p{
-        font-size: 50px;
-    }
-
-    .hero-latest-btn{
-        width: 220px;
-        height: 50px;
-        font-size: 16px;
-    }
-
-    .hero-right img{
-        width: 400px;
-    }
-}
-
-@media(max-width:800px){
-    .hero{
-        height: 50vh;
-    }
-
-    .hero-left{
-        padding-left: 30px;
-    }
-
-    .hero-left h2{
-        font-size: 16px;
-    }
-
-    .hero-left p{
-        font-size: 40px;
-    }
-
-    .hero-latest-btn{
-        width: 175px;
-        height: 40px;
-        font-size: 13px;
-    }
-
-    .hero-right img{
-        height: auto;
-        width: 200px;
+        height:300px
     }
 }
 
 @media(max-width:500px){
     .hero{
-        flex-direction: column;
-        height: 50vh;
-    }
-
-    .hero-right{
-        display: none;
-    }
-
-    .hero-left h2{
-        font-size: 18px;
+        height: 40vh;
     }
 
     .hero-left p{

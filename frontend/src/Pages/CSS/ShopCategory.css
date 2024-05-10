@@ -8,8 +8,10 @@
 
 .shopcategory-sort{
     padding: 10px 20px;
-    border: 2px solid #272727;
-    color: #272727;
+    border: 1px solid #FF3C00;
+    color: #FF3C00;
+    border-radius: 30px;
+    cursor: pointer;
 }
 
 .shopcategory-indexSort p span{
@@ -31,19 +33,20 @@
     margin: 150px;
     width: 233px;
     height: 69px;
-    border: none;
-    background: #272727;
-    color: white;
+    border: 1px solid #FF3C00;
+    border-radius: 40px;
+    background: #f3efe7;
+    color: #ff3c00;
     font-size: 18px;
     font-weight: 500;
-    border-radius: 8px;
     cursor: pointer;
 }
 
 .shopcategory-loadmore:active{
-    background-color: #272727;
-    color: #F5F5f5;
+    background-color: #ff3c00;
+    color: #f3efe7;
 }
+
 
 @media(max-width:1280px){
     .shop-category{

@@ -9,14 +9,14 @@
 
 .popular h1{
     font-size: 50px;
-    font-weight: 500;
-    font-family: "Unbounded";
+    font-weight: 700;
 }
 
 .popular hr{
     width: 200px;
-    height: 6px;
-    background: #272727;
+    height: 2px;
+    background: #FF3C00;
+    border: none;
 }
 
 .popular-item{

@@ -1,5 +1,6 @@
 .item{
     width: 280px;
+    border: 1px solid #FF3C00;
 }
 .item img{
     width: 280px;
@@ -7,8 +8,9 @@
 
 .item p{
     margin: 6px 0px;
-    font-family:"Unbounded";
     font-weight: 500;
+    border-bottom: 1px solid #FF3C00;
+    border-top: 1px solid #FF3C00;
 }
 
 .item-prices{

@@ -2,8 +2,8 @@
 
 .container {
     display: flex;
-    background-color: #272727;
-    color: white;
+    background-color: #FF3C00;
+    color: #f3efe7;
     flex-wrap: wrap;
 }
 
@@ -53,7 +53,7 @@
     width: 50%;
     margin-bottom: 10px;
     cursor: pointer;
-    font-weight: 200;
+    font-weight: 500;
 }
 
 .right {

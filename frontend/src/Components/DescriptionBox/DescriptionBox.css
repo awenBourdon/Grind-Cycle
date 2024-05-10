@@ -14,23 +14,23 @@
     font-weight: 600;
     width: 171px;
     height: 70px;
-    border: 1px solid #272727;
-    background-color: white;
+    border: 1px solid #FF3C00;
+    background-color: #f3efe7;
 }
 
 .descriptionbox-nav-box.fade{
-    background: white;
-    color: #272727;
+    background: #f3efe7;
+    color: #FF3C00;
 }
 
 .descriptionbox-description{
     display: flex;
     flex-direction: column;
     gap: 25px;
-    border: 1px solid #272727;
+    border: 1px solid #FF3C00;
     padding: 48px;
     padding-bottom: 70px;
-    background-color: white;
+    background-color: #f3efe7;
 }
 
 @media(max-width:1280px){

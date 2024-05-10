@@ -80,7 +80,7 @@ const signup = async() => {
         <input type="checkbox" name="" id="" />
          <p>Je confirme avoir lu, compris et accepté les <b>conditions d'utilisation et la politique de confidentialité.</b></p>
          </div>}
-        <button onClick={()=>{state==="SE CONNECTER"?login():signup()}}>Continuer</button>
+        <button onClick={()=>{state==="Se connecter"?login():signup()}}>Continuer</button>
       </div>
     </div>
   )

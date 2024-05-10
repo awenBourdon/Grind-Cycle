@@ -3,9 +3,9 @@
     justify-content: space-around;
     padding: 16px;
     align-items: center;
-    background: white;
-    color:#272727;
-    box-shadow: 0 1px 3px -2px #111111;
+    background: #f3efe7;
+    color:#FF3C00;
+    border-bottom: 1px solid #FF3C00;
 }
 
 .nav-logo{
@@ -15,7 +15,7 @@
 }
 
 .nav-logo p{
-    color: #272727;
+    color: #FF3C00;
     font-size: 30px;
     font-weight: 500;
     font-family:"Unbounded";
@@ -26,7 +26,7 @@
     align-items: center;
     list-style: none;
     gap: 50px;
-    color: #272727;
+    color: #FF3C00;
     font-size: 20px;
     font-weight: 700;
 }
@@ -38,14 +38,14 @@
     justify-content: center;
     gap: 3px;
     cursor: pointer;
-    color: #272727;
+    color: #FF3C00;
 }
 
 .nav-menu hr{
     border: none;
     width: 80%;
-    height: 3px;
-    background: #272727;
+    height: 1px;
+    background: #FF3C00;
 }
 
 .nav-login-cart{
@@ -56,30 +56,35 @@
 
 .nav-login-cart button{
     padding: 10px 30px;
-    background-color: #272727;
-    border: none;
-    border-radius: 8px;;
+    background-color: #f3efe7;
     font-family: "DM Sans", sans-serif;
-    color: white;
+    color: #ff3c00;
     font-size: 20px;
     font-weight: 500;
     white-space: nowrap;
     cursor: pointer;
+    border: 1px solid #ff3c00;
+    border-radius: 30px;
+}
+
+.nav-login-cart button:active{
+    background-color: #ff3c00;
+    color: #f3efe7;
 }
 
 .nav-login-cart p{
     padding: 10px 30px;
     font-family: "DM Sans", sans-serif;
-    color: #272727;
+    color: #FF3C00;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 500;
     cursor: pointer;
     text-decoration: none;
 }
 
-.nav-login-cart button:active{
-    color: #272727;
-    background-color: #F5F5f5;
+.nav-login-cart button:hover{
+    border: 1px solid #ff3c00;
+    border-radius: 30px;
 }
 
 .nav-dropdown{
@@ -175,10 +180,10 @@
         height: 88px;
         width: 100%;
         position: absolute;
-        background: white;
+        background: #f3efe7;
         justify-content: center;
         top: 80px;
-        box-shadow: 0 1px 3px -2px #111111;
+        border-bottom: 1px solid #FF3C00;
     }
     .nav-menu-visible{
         display: flex;

@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Hero.css"
-import hero_image from "../Assets/hero_image.png"
+import { Link } from 'react-router-dom'
+
 
 const Hero = () => {
   return (
@@ -8,19 +9,14 @@ const Hero = () => {
         <div className="hero-left">
             <div>
                 <div className="hand-hand-icon">
-                    <p>La référence</p>
+                    <p>LA RÉFÉRENCE</p>
                     
                 </div>
-                <p>du skate</p>
-                <p>en ligne</p>
+                <p>DU SKATE EN LIGNE</p>
             </div>
             <div className="hero-latest-btn">
-                <div>DÉCOUVRIR</div>
-                
+                <Link style={{ textDecoration:"none", color:"#ff3c00", fontWeight:"500"}} to="/skate"><div>Découvrir</div></Link>
             </div>
-        </div>
-        <div className="hero-right">
-        <img src={hero_image} alt="" />
         </div>
     </div>
   )
